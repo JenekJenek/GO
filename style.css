@@ -1,0 +1,543 @@
+body {
+    background: #1B1A1B;
+
+    min-width: 320px;
+    min-height: 100vh;
+
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: hsla(0, 0%, 100%, 1); /*цвет под ваш проект*/
+    background-color: hsla(300, 2%, 10%, 1);
+
+}
+
+section {
+    /* margin-bottom: 30px; */
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+section:first-child {
+    padding-top: 0;
+}
+
+h1 {
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 150px;
+    line-height: 100%;
+    text-transform: uppercase;
+    
+    letter-spacing: -0.1em;
+    color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+    z-index: 0;
+}
+
+h2 {
+    text-align: center;
+
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 50px;
+    
+    text-align: center;
+    text-transform: uppercase;
+    
+    color: #FFFFFF;
+    margin-bottom: 60px;
+    margin-top: 0;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    margin: 0;
+    padding: 0;
+}
+
+.container { 
+    margin: 0 auto;
+    width: 1440px;
+}
+
+/* main */
+
+main {
+    padding-top: 207px;
+}
+
+.main__container {
+    position: relative;
+    z-index: 1;
+    height: 763px;
+    margin: 0 auto 0 auto;
+    padding-left: 90px;
+
+    /* background-image: url(img/main/vrBoy.png);
+    background-position: 600px 0px;
+    background-repeat: no-repeat; */
+}
+
+.main__logo-pic {
+    position: relative;
+    z-index: 100;
+    top: -200px;
+    left: 500px;
+}
+
+.main__text-position {
+    position: relative;
+    z-index: 0;
+    vertical-align: top;
+    margin: 0;
+}
+
+.main__text {
+    position: relative;
+    z-index: 0;
+    padding-left: 100px;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 50px;
+
+    color: #FFFFFF;
+}
+
+/* .logo-pic {
+    position: relative;
+    z-index: 0;
+} */
+
+/* rooms */
+.rooms__block {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.rooms__list {
+    padding-left: 90px;
+}
+
+.rooms__list li {
+    margin-bottom: 20px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.rooms__list li:not(:nth-child(2n)) {
+    margin-right: 20px;
+}
+
+.rooms__list li:nth-last-child(-n+2) {
+    margin-bottom: 0;
+}
+
+.rooms__vibes-item {
+    position: relative;
+    width: 580px;
+    height: 349px;
+    margin: 0;
+
+
+    background-image: url(img/rooms/vibes.jpg);
+}
+
+.rooms__vibes-text {
+    padding-top: 150px; 
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 80px;
+    
+    text-align: center;
+    text-transform: uppercase;
+    
+    color: #FFFFFF;
+}
+
+.rooms__star-item {
+    position: relative;
+    width: 580px;
+    height: 349px;
+
+
+    background-image: url(img/rooms/starWars.jpg);
+}
+
+.rooms__star-text {
+    padding-top: 150px; 
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 80px;
+    
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+}
+
+.rooms__wild-item {
+    position: relative;
+    width: 580px;
+    height: 349px;
+    margin: 0;
+
+    background-image: url(img/rooms/wildWest.jpg);
+}
+
+.rooms__wild-text {
+    padding-top: 150px; 
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 80px;
+    
+    text-align: center;
+    text-transform: uppercase;
+    
+    color: #FFFFFF;
+}
+
+.rooms__neon-item {
+    position: relative;
+    width: 580px;
+    height: 349px;
+
+    background-image: url(img/rooms/neonStyle.jpg);
+}
+
+.rooms__neon-text {
+    padding-top: 150px; 
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 80px;
+
+    text-align: center;
+    text-transform: uppercase;
+    
+    color: #FFFFFF;
+}
+
+/* about */
+
+.about__second {
+    padding-left: 90px;
+}
+
+.about__text {
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    
+    color: #FFFFFF;    
+    margin-bottom: 30px;
+}
+
+.about__text-x {
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+
+    color: #FFFFFF;
+    
+    margin-bottom: 40px;
+}
+
+blockquote {
+    margin: 0;
+    margin-bottom: 42px;
+
+    display: inline-block;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 50px;
+
+    text-transform: uppercase;
+    color: #FFFFFF;   
+}
+
+blockquote::before {
+    content: "“";
+    margin-right: 16px;    
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 50px;
+    text-transform: uppercase;
+    color: #6C0287;
+}
+
+.about__ficha {
+    text-transform: uppercase;    
+    color: #6C0287;
+
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 50px;    
+}
+
+.about__pic {
+    height: 80px;
+    width: 80px;
+    margin-right: 20px;
+    padding-left: 750px;
+}
+
+.about__pic-style {
+    display: inline-block;
+}
+
+.about__pic-text {
+    float: right; 
+}
+
+/* reviews */
+
+figure {
+    margin: 0;
+}
+
+.reviews__list {
+    padding-left: 90px;
+}
+
+.reviews__photo {
+    margin-right: 20px;
+}
+
+.reviews__item {
+    margin-bottom: 50px;
+}
+
+.reviews__item:last-child {
+    margin-bottom: 0px;
+}
+
+.blo {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.reviews__photo-name {
+    text-align: center;
+    font-family: Arial;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0em;
+}
+
+.reviews__photo-item {
+    margin-bottom: 11px;
+}
+
+.reviews__text {
+    width: 780px;
+    padding-top: 60px;
+    font-family: Arial;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0em;
+}
+
+
+
+/* faq */
+
+.element {
+    position: relative;
+    background-color: #440F51;
+    height: 30px;
+    width: auto;
+    color: #1C1A1A;
+    font-weight: 700;
+    font-size: 24px;
+    padding: 30px 70px;
+    margin-bottom: 20px;
+    vertical-align: middle;
+    width: 1040px;
+    color: #fff;
+}
+
+.element:last-child {
+    margin-bottom: 0px;
+}
+
+.element:nth-child(odd){
+    background-color: #fff;
+    color: #440F51;
+}
+
+.icon-purple::after {
+    position: absolute;
+    content: url(img/faq/open-purple.svg);
+    height: 46px;
+    width: 46px;    
+    top: 21px;
+    right: 50px;
+}
+
+.icon-white::after {
+    position: absolute;
+    content: url(img/faq/open.svg);
+    height: 46px;
+    width: 46px;
+    top: 21px;
+    right: 50px;
+}
+
+.feedback-list {
+    list-style-type: none;
+    position: relative;
+    height: auto;
+    width: auto;
+}
+
+.feedback-item {
+    position: relative;
+    margin-left:0px;
+    padding-left:0px;
+    display: inline-block;
+}
+
+.feedback-text {
+    margin-top: 20px;
+}
+
+.about-pic {
+    position: relative;
+    float: left;
+    text-align: left; 
+    margin: 20px; 
+    padding: 0;
+}
+
+.faq-list {
+    list-style-type: none;
+    padding-left: 90px;
+}
+
+/* footer */
+.footer {
+    padding-top: 50px;
+    padding-bottom: 40px;
+    padding-left: 70px;
+}
+
+.footer-text {
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    
+    color: #FFFFFF;
+}
+
+.footer__contact-list {
+    padding-left: 90px;
+    margin-bottom: 40px;
+}
+
+.footer__contact-list li {
+    margin-bottom: 30px;
+}
+
+.footer__contact-list li:last-child {
+    margin-bottom: 0px;
+}
+
+.footer__local::before {
+    content: url(img/footer/location.svg);
+    position: relative;
+    width: 32px;
+    height: 32px;
+    float: left;
+    top: 9px;
+    margin-right: 15px;
+}
+
+.footer__tel::before {
+    content: url(img/footer/phone.svg);
+    position: relative;
+    width: 32px;
+    height: 32px;
+
+    float: left;
+    margin-right: 15px;
+}
+
+.footer__mail::before {
+    content: url(img/footer/mail.svg);
+    position: relative;
+    width: 32px;
+    height: 32px;
+
+    float: left;
+    margin-right: 15px;
+}
+
+.footer__social-list {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    width: 380px;
+    height: 50px;
+    list-style: none;
+    padding-left: 90px;
+}
+
+.footer__social-item {
+    margin-right: 28px;
+    padding: 0;
+}
+
+.footer__social-item:last-child {
+    margin-right: 0;
+}
+
+.footer__social-item:first-child {
+    padding-left: 0;
+}
+
+.footer__social-list::after {
+    height: 100px;
+}
+
+
+
+
