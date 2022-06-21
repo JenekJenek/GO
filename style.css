@@ -22,6 +22,10 @@ button {
     cursor: pointer;
 }
 
+a {
+    text-decoration: none;
+}
+
 h1 {
     font-family: 'Arial';
     font-style: normal;
@@ -157,6 +161,12 @@ th {
     letter-spacing: 0em;
     text-align: left;
     text-transform: uppercase;
+}
+
+.header__list-text:hover {
+    color: #ffe7ff;
+    transition-duration: 0.2s;
+    cursor: pointer;
 }
 
 /* main */
@@ -315,6 +325,10 @@ th {
 }
 
 /* friends */
+.friends__header {
+    margin-bottom: 41px;
+}
+
 .friends__wrapper {
     padding-left: 90px;
 }
@@ -322,6 +336,7 @@ th {
 .friends__list {
     display: flex;
     justify-content: flex-start;
+    align-items: flex-end;
     flex-flow: row wrap;
     gap: 40px 20px;
 }
@@ -526,6 +541,7 @@ th {
     display: inline-flex;
     align-items: center;
     user-select: none;
+    cursor: pointer;
 }
 
 .reserved__item-check+label::before {
@@ -560,6 +576,7 @@ th {
     display: inline-flex;
     align-items: center;
     user-select: none;
+    cursor: pointer;
 }
 
 .reserved__item-radio+label::before {
@@ -972,7 +989,6 @@ figure {
     font-weight: 700;
     font-size: 24px;
     padding: 30px 70px;
-    /* margin-bottom: 20px; */
     vertical-align: middle;
     width: 1040px;
     color: #fff;
@@ -982,6 +998,9 @@ figure {
     align-items: center;
 }
 
+.element:hover {
+    background-color: #440F51;
+}
 
 .element:nth-child(odd){
     background-color: #fff;
@@ -1116,6 +1135,12 @@ figure {
     margin-right: 15px;
 }
 
+.footer__tel:hover {
+    cursor: pointer;
+    transition-duration: 0.2s;
+    color: #EADEED;
+}
+
 .footer__tel::before {
     content: url(img/footer/phone.svg);
     position: relative;
@@ -1124,6 +1149,12 @@ figure {
 
     float: left;
     margin-right: 15px;
+}
+
+.footer__mail:hover {
+    cursor: pointer;
+    transition-duration: 0.2s;
+    color: #EADEED;
 }
 
 .footer__mail::before {
@@ -1184,13 +1215,18 @@ figure {
     color: hsla(0, 0%, 100%, 1);
 }
 
+.footer__downer-mail:hover {
+    color: #640AA3;
+    transition-duration: 0.2s;
+}
+
 .footer__button svg {
     fill: white;
     transition-duration: 0.4s;
 }
 
 .footer__button:hover svg {
-    fill: #EADEED;;
+    fill: #EADEED;
 }
 
 .footer__button:active svg {
