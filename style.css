@@ -534,9 +534,13 @@ th {
 }
 
 .reserved__item-check:checked+label::before {
-    border-color: #0b76ef;
-    background-color: #0b76ef;
+    border-color: white;
+    background-color: rgb(189, 108, 180);
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+}
+
+.reserved__item-check:focus+label {
+    border-color: 1px solid #CD06FF;
 }
 
 .reserved__item-radio {
@@ -565,16 +569,17 @@ th {
     background-position: center center;
     background-size: 50% 50%;
     background-color: white;
-        box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 .reserved__item-radio:not(:disabled):not(:checked)+label:hover::before {
-    border-color: #b3d7ff;
+    background-color: #ffffff;
+    border-color: #CD06FF;
 }
 
 .reserved__item-radio:not(:disabled):active+label::before {
-    background-color: #b3d7ff;
-    border-color: #b3d7ff;
+    background-color: #ffffff;
+    border-color: black;
 }
   /* стили для радиокнопки, находящейся в фокусе */
 .reserved__item-radio:focus+label::before {
@@ -585,13 +590,14 @@ th {
   /* стили для радиокнопки, находящейся в фокусе и не находящейся в состоянии checked */
 .reserved__item-radio:focus:not(:checked)+label::before {
     box-sizing: border-box;
-    border-color: #80bdff;
+    border-color: #ffffff;
     border: 1px solid #CD06FF;
 }
   /* стили для радиокнопки, находящейся в состоянии checked */
 .reserved__item-radio:checked+label::before {
+    border-radius: 45%;
     border-color: white;
-    background-color: #CD06FF;
+    background-color: rgb(189, 108, 180);
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e");
     
 }
@@ -667,6 +673,7 @@ th {
     width: 134px;
     height: 54px;
     border: 0;
+    box-sizing: border-box;
 
     background-image: url(img/reserved/triangle.png);
     background-position: 95px 20px;
@@ -677,6 +684,7 @@ th {
 .reserved__date-button:first-child {
     margin-right: 41px;
     margin-bottom: 36px;
+    box-sizing: border-box;
 }
 
 .reserved__date-number {
@@ -710,14 +718,14 @@ th {
 .reserved__name {
     position: relative;
     width: 300px;
-    height: 52px;
+    height: 54px;
     border: 0;
+    box-sizing: border-box;
 }
 
 .reserved__name:focus {
     box-sizing: border-box;
-    background: #FFFFFF;
-    border: 2px solid #CD06FF;
+    border: 5px solid #CD06FF;
 }
 
 .reserved__name:nth-child(even) {
@@ -957,6 +965,9 @@ figure {
     width: 1040px;
     color: #fff;
 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 
@@ -965,22 +976,56 @@ figure {
     color: #440F51;
 }
 
-.icon-purple::after {
-    position: absolute;
-    content: url(img/faq/open-purple.svg);
+.faq__button-purple {
+    background-image: url(img/faq/open-purple.png);
+    width: 46px;
     height: 46px;
-    width: 46px;    
-    top: 21px;
-    right: 50px;
+    background-repeat: no-repeat;
+    border: 0;
+    background-color: #fff;
 }
 
-.icon-white::after {
-    position: absolute;
-    content: url(img/faq/open.svg);
-    height: 46px;
+.faq__button-purple:hover {
+    background-image: url(img/faq/purpleHover.png);
     width: 46px;
-    top: 21px;
-    right: 50px;
+    height: 46px;
+    background-repeat: no-repeat;
+    border: 0;
+}
+
+.faq__button-purple:active {
+    background-image: url(img/faq/purpleActive.png);
+    width: 46px;
+    height: 46px;
+    background-repeat: no-repeat;
+    border: 0;
+}
+
+.faq__button-white {
+    background-image: url(img/faq/white.png);
+    width: 46px;
+    height: 46px;
+    background-repeat: no-repeat;
+    border: 0;
+    background-color: #440F51;
+}
+
+.faq__button-white:hover {
+    background-image: url(img/faq/whiteHover.png);
+    width: 46px;
+    height: 46px;
+    background-repeat: no-repeat;
+    border: 0;
+    background-color: #440F51;
+}
+
+.faq__button-white:active {
+    background-image: url(img/faq/whiteActive.png);
+    width: 46px;
+    height: 46px;
+    background-repeat: no-repeat;
+    border: 0;
+    background-color: #440F51;
 }
 
 .feedback-list {
@@ -1085,23 +1130,7 @@ figure {
     width: 380px;
     height: 50px;
     list-style: none;
-}
-
-.footer__social-item {
-    margin-right: 28px;
-    padding: 0;
-}
-
-.footer__social-item:last-child {
-    margin-right: 0;
-}
-
-.footer__social-item:first-child {
-    padding-left: 0;
-}
-
-.footer__social-list::after {
-    height: 100px;
+    gap: 20px;
 }
 
 .footer__wrapper {
@@ -1139,6 +1168,22 @@ figure {
     text-align: left; 
     text-decoration: none;
     color: hsla(0, 0%, 100%, 1);
+}
+
+.footer__button {
+    fill: white;
+}
+
+.footer__button:hover svg {
+    fill: #EADEED;;
+}
+
+.footer__button:active svg {
+    fill: #CD06FF;
+}
+
+.footer__button:focus svg {
+    fill: #EADEED;
 }
 
 
