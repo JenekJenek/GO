@@ -1,3 +1,1 @@
-''' shell
-git ini
-'''
+
