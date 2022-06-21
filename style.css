@@ -135,6 +135,7 @@ th {
     line-height: 30px;
     text-transform: uppercase;
     color: #FFFFFF;
+    transition-duration: 0.2s;
 }
 
 .header__button:hover ,.header__button:focus{
@@ -261,6 +262,7 @@ th {
     color: #FFFFFF;
     position: relative;
     margin-right: 165px;
+    transition-duration: 0.2s;
 }
 
 .main__button:hover, .main__button:focus {
@@ -286,6 +288,7 @@ th {
     background-image: url(img/main/downWhite.png);
     background-repeat: no-repeat;
     background-position: 32px 26px;
+    transition-duration: 0.4s;
 }
 
 .main__button-down:hover {
@@ -326,6 +329,14 @@ th {
 .friends-size {
     width: 380px;
     height: 228px;
+    transition-duration: 0.4s;
+    transition-property: transform;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.friends-size:hover {
+    transform: scale(1.1);
 }
 
 .friends__vr {
@@ -539,10 +550,6 @@ th {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
 }
 
-/* .reserved__item-check:focus+label {
-    border-color: 1px solid #CD06FF;
-} */
-
 .reserved__item-radio {
     position: absolute;
     z-index: -1;
@@ -628,6 +635,7 @@ th {
     text-align: center;
     text-transform: uppercase;
     color: #000000;
+    transition-duration: 0.5s;
 }
 
 .reserved__button-style:hover {
@@ -987,6 +995,7 @@ figure {
     background-repeat: no-repeat;
     border: 0;
     background-color: #fff;
+    transition-duration: 0.2s;
 }
 
 .faq__button-purple:hover {
@@ -1012,6 +1021,7 @@ figure {
     background-repeat: no-repeat;
     border: 0;
     background-color: #440F51;
+    transition-duration: 0.2s;
 }
 
 .faq__button-white:hover {
@@ -1174,8 +1184,9 @@ figure {
     color: hsla(0, 0%, 100%, 1);
 }
 
-.footer__button {
+.footer__button svg {
     fill: white;
+    transition-duration: 0.4s;
 }
 
 .footer__button:hover svg {
