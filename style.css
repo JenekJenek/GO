@@ -1,19 +1,17 @@
+@import url(var.css);
+
 body {
     background: #1B1A1B;
-
     min-width: 320px;
     min-height: 100vh;
-
     font-family: Arial, sans-serif;
     font-size: 20px;
     font-weight: 400;
-    color: hsla(0, 0%, 100%, 1); /*цвет под ваш проект*/
+    color: var(--mainText-color);
     background-color: hsla(300, 2%, 10%, 1);
-
 }
 
 section {
-    /* margin-bottom: 30px; */
     padding-top: 50px;
     padding-bottom: 50px;
 }
@@ -35,7 +33,7 @@ h1 {
     text-transform: uppercase;
     
     letter-spacing: -0.1em;
-    color: #FFFFFF;
+    color: var(--mainText-color);
     margin: 0;
     padding: 0;
     z-index: 0;
@@ -53,7 +51,7 @@ h2 {
     text-align: center;
     text-transform: uppercase;
     
-    color: #FFFFFF;
+    color: var(--mainText-color);
     margin-bottom: 60px;
     margin-top: 0;
 }
@@ -62,6 +60,7 @@ h3 {
     margin: 0;
     padding: 0;
     margin-bottom: 40px;
+    color: var(--mainText-color);
 }
 
 button {
@@ -105,7 +104,6 @@ th {
     background-image: url(img/header/logo.svg);
     height: 66px;
     width: 120px;
-
 }
 
 .header__wrapper {
@@ -127,7 +125,7 @@ th {
 .header__button {
     height: 55px;
     width: 280px;
-    border: 3px solid #CD06FF;
+    border: 3px solid var(--mainTextOne-color);
     border-radius: 10px;
     box-sizing: border-box;
     background: none;
@@ -138,13 +136,13 @@ th {
     font-size: 22px;
     line-height: 30px;
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: var(--mainText-color);
     transition-duration: 0.2s;
 }
 
 .header__button:hover ,.header__button:focus{
-    background: #6C0287;
-    border: 3px solid #6C0287;
+    background: var(--mainBackground-color);;
+    border: 3px solid var(--mainBackground-color);;
     border-radius: 10px;
 }
 
@@ -215,7 +213,7 @@ th {
     font-weight: 400;
     font-size: 28px;
     line-height: 50px;
-    color: #FFFFFF;
+    color: var(--mainText-color);
     margin-bottom: 30px;
 }
 
@@ -225,7 +223,7 @@ th {
     font-weight: 900;
     font-size: 100px;
     line-height: 141px;
-    color: #CD06FF;
+    color: var(--mainTextOne-color);
     text-transform: uppercase;
     text-align: center;
 }
@@ -243,7 +241,7 @@ th {
     font-size: 30px;
     line-height: 34px;
     text-align: center;
-    color: #FFFFFF;
+    color: var(--mainText-color);
 }
 
 .main__list {
@@ -260,7 +258,7 @@ th {
 .main__button {
     width: 374px;
     height: 80px;    
-    background: #6C0287;
+    background: var(--mainBackground-color);
     border-radius: 10px;
 
     font-family: 'Arial';
@@ -269,7 +267,7 @@ th {
     font-size: 26px;
     line-height: 30px;
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: var(--mainText-color);
     position: relative;
     margin-right: 165px;
     transition-duration: 0.2s;
@@ -310,8 +308,8 @@ th {
 }
 
 .main__button-down:active {
-    background: #CD06FF;
-    border: 1px solid #CD06FF;
+    background: var(--mainTextOne-color);
+    border: 1px solid var(--mainTextOne-color);
     background-image: url(img/main/downPurple.png);
     background-repeat: no-repeat;
     background-position: 32px 26px;
@@ -366,6 +364,7 @@ th {
 
 .friends__audio {
     background-image: url(img/friends/audio.jpg);
+
 }
 
 .friends__karaoke {
@@ -380,6 +379,7 @@ th {
 
 .friends__film {
     background-image: url(img/friends/film.jpg);
+    
 }
 
 .friends__playstation {
@@ -394,7 +394,6 @@ th {
     line-height: 28px;
     letter-spacing: 0em;
     text-align: left;
-
     padding-left: 40px;
     padding-top: 166px;
 }
@@ -413,20 +412,6 @@ th {
     gap: 20px;
 }
 
-/* .rooms__list li {
-    margin-bottom: 20px;
-    display: inline-block;
-    vertical-align: top;
-}
-
-.rooms__list li:not(:nth-child(2n)) {
-    margin-right: 20px;
-}
-
-.rooms__list li:nth-last-child(-n+2) {
-    margin-bottom: 0;
-} */
-
 .rooms__vibes-item {
     position: relative;
     width: 580px;
@@ -442,11 +427,9 @@ th {
     font-weight: 700;
     font-size: 70px;
     line-height: 80px;
-    
     text-align: center;
     text-transform: uppercase;
-    
-    color: #FFFFFF;
+    color: var(--mainText-color);;
 }
 
 .rooms__star-item {
@@ -467,7 +450,7 @@ th {
     text-align: center;
     text-transform: uppercase;
 
-    color: #FFFFFF;
+    color: var(--mainText-color);
 }
 
 .rooms__wild-item {
@@ -489,7 +472,7 @@ th {
     text-align: center;
     text-transform: uppercase;
     
-    color: #FFFFFF;
+    color: var(--mainText-color);
 }
 
 .rooms__neon-item {
@@ -510,12 +493,12 @@ th {
     text-align: center;
     text-transform: uppercase;
     
-    color: #FFFFFF;
+    color: var(--mainText-color);
 }
 
 /* reserved */
 .reserved {
-    background-color: hsla(288, 68%, 19%, 1);
+    background-color: var(--mainBackgroundOne-color);
 }
 
 .reserved__wrapper {
@@ -533,7 +516,7 @@ th {
     font-size: 24px;
     line-height: 28px;
     text-align: center;
-    color: #FFFFFF;
+    color: var(--mainText-color);
 }
 
 .reserved__list-input {
@@ -607,7 +590,7 @@ th {
 
 .reserved__item-radio:not(:disabled):not(:checked)+label:hover::before {
     background-color: #ffffff;
-    border-color: #CD06FF;
+    border-color: var(--mainTextOne-color);
 }
 
 .reserved__item-radio:not(:disabled):active+label::before {
@@ -617,14 +600,14 @@ th {
   /* стили для радиокнопки, находящейся в фокусе */
 .reserved__item-radio:focus+label::before {
     box-sizing: border-box;
-    border: 1px solid #CD06FF;
+    border: 1px solid var(--mainTextOne-color);
     border-radius: 0%;
 }
   /* стили для радиокнопки, находящейся в фокусе и не находящейся в состоянии checked */
 .reserved__item-radio:focus:not(:checked)+label::before {
     box-sizing: border-box;
     border-color: #ffffff;
-    border: 1px solid #CD06FF;
+    border: 1px solid var(--mainTextOne-color);
 }
   /* стили для радиокнопки, находящейся в состоянии checked */
 .reserved__item-radio:checked+label::before {
@@ -671,7 +654,7 @@ th {
 }
 
 .reserved__button-style:active {
-    background: #6C0287;
+    background: var(--mainBackground-color);;
     border: 3px solid #FFFFFF;
     border-radius: 8px;
 }
@@ -763,7 +746,7 @@ th {
 
 .reserved__name:focus {
     box-sizing: border-box;
-    border: 5px solid #CD06FF;
+    border: 5px solid var(--mainTextOne-color);
 }
 
 .reserved__name:nth-child(even) {
@@ -777,7 +760,7 @@ th {
     font-size: 14px;
     line-height: 16px;
 
-    color: #FFFFFF;
+    color: var(--mainText-color);
     margin-bottom: 6px;
 }
 
@@ -799,13 +782,13 @@ th {
     font-size: 22px;
     line-height: 28px;
     text-transform: uppercase;
-    color: #6C0287;
+    color: var(--mainBackground-color);;
     margin-bottom: 30px;
 }
 
 .reserved__footer-button:hover {
     background: #EADEED;
-    border: 3px solid #6C0287;
+    border: 3px solid var(--mainBackground-color);;
     border-radius: 10px;
 }
 
@@ -816,7 +799,7 @@ th {
 
 .reserved__footer-button:focus {
     background: #FFFFFF;
-    border: 3px solid #6C0287;
+    border: 3px solid var(--mainBackground-color);;
     border-radius: 10px;
 }
 
@@ -863,7 +846,7 @@ th {
     font-size: 20px;
     line-height: 28px;
     
-    color: #FFFFFF;    
+    color: var(--mainText-color);   
     margin-bottom: 30px;
 }
 
@@ -874,7 +857,7 @@ th {
     font-size: 20px;
     line-height: 28px;
 
-    color: #FFFFFF;
+    color: var(--mainText-color);
     
     margin-bottom: 40px;
 }
@@ -891,7 +874,7 @@ blockquote {
     line-height: 50px;
 
     text-transform: uppercase;
-    color: #FFFFFF;   
+    color: var(--mainText-color);  
 }
 
 blockquote::before {
@@ -903,12 +886,12 @@ blockquote::before {
     font-size: 44px;
     line-height: 50px;
     text-transform: uppercase;
-    color: #6C0287;
+    color: var(--mainBackground-color);;
 }
 
 .about__ficha {
     text-transform: uppercase;    
-    color: #6C0287;
+    color: var(--mainBackground-color);;
 
     font-family: 'Arial';
     font-style: normal;
@@ -949,14 +932,6 @@ figure {
     margin-right: 20px;
 }
 
-/* .reviews__item {
-    margin-bottom: 50px;
-} */
-
-.reviews__item:last-child {
-    margin-bottom: 0px;
-}
-
 .blo {
     display: inline-block;
     vertical-align: top;
@@ -973,7 +948,27 @@ figure {
 
 .reviews__photo-item {
     margin-bottom: 11px;
+    position: relative;
 }
+
+.review__gradient {
+    margin: 0;
+    padding: 0;
+    margin-bottom: -286px;
+}
+
+.review__gradient::after {
+        content: "";
+        display: block;    
+        position: relative;
+        width: 280px;
+        height: 280px;
+        left: -0px;
+        top: -296px; 
+        background: radial-gradient(50% 50% at 50% 50%, rgba(196, 196, 196, 0) 0%, rgba(108, 2, 135, 0.5) 100%);
+        border-radius: 140px;
+
+    }
 
 .reviews__text {
     width: 780px;
@@ -985,13 +980,11 @@ figure {
     letter-spacing: 0em;
 }
 
-
-
 /* faq */
 
 .element {
     position: relative;
-    background-color: #440F51;
+    background-color: var(--mainBackgroundOne-color);
     height: 30px;
     width: auto;
     color: #1C1A1A;
@@ -1000,7 +993,7 @@ figure {
     padding: 30px 70px;
     vertical-align: middle;
     width: 1040px;
-    color: #fff;
+    color: var(--mainText-color);
 
     display: flex;
     justify-content: space-between;
@@ -1008,12 +1001,12 @@ figure {
 }
 
 .element:hover {
-    background-color: #440F51;
+    background-color: var(--mainBackgroundOne-color);
 }
 
 .element:nth-child(odd){
     background-color: #fff;
-    color: #440F51;
+    color: var(--mainBackgroundOne-color);
 }
 
 .faq__button-purple {
@@ -1048,7 +1041,7 @@ figure {
     height: 46px;
     background-repeat: no-repeat;
     border: 0;
-    background-color: #440F51;
+    background-color: var(--mainBackgroundOne-color);
     transition-duration: 0.2s;
 }
 
@@ -1058,7 +1051,7 @@ figure {
     height: 46px;
     background-repeat: no-repeat;
     border: 0;
-    background-color: #440F51;
+    background-color: var(--mainBackgroundOne-color);
 }
 
 .faq__button-white:active {
@@ -1067,7 +1060,7 @@ figure {
     height: 46px;
     background-repeat: no-repeat;
     border: 0;
-    background-color: #440F51;
+    background-color: var(--mainBackgroundOne-color);
 }
 
 .feedback-list {
@@ -1118,8 +1111,7 @@ figure {
     font-weight: 700;
     font-size: 24px;
     line-height: 28px;
-    
-    color: #FFFFFF;
+    color: var(--mainText-color);;
 }
 
 .footer__contact-list {
@@ -1221,7 +1213,7 @@ figure {
     letter-spacing: 0em;
     text-align: left; 
     text-decoration: none;
-    color: hsla(0, 0%, 100%, 1);
+    color: var(--mainText-color);
 }
 
 .footer__downer-mail:hover {
@@ -1239,7 +1231,7 @@ figure {
 }
 
 .footer__button:active svg {
-    fill: #CD06FF;
+    fill: var(--mainTextOne-color);
 }
 
 .footer__button:focus svg {
