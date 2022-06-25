@@ -731,6 +731,10 @@ th {
     color:#211E1E ;
 }
 
+.reserved__date-box {
+    width: 310px;
+}
+
 .reserved__date-box:first-child {
     padding-top: 22px;
     width: 320px;
@@ -761,7 +765,6 @@ th {
     line-height: 16px;
 
     color: var(--mainText-color);
-    margin-bottom: 6px;
 }
 
 .reserved__footer {
@@ -951,13 +954,13 @@ figure {
     position: relative;
 }
 
-.review__gradient {
+.reviews__gradient {
     margin: 0;
     padding: 0;
     margin-bottom: -286px;
 }
 
-.review__gradient::after {
+.reviews__gradient::after {
         content: "";
         display: block;    
         position: relative;
