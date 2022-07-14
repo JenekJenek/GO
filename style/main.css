@@ -1,0 +1,141 @@
+/* main */
+.main__container {
+    position: relative;
+    padding-left: 90px;
+    min-height: 812px;
+    /* background-image: url(img/main/vrBoy.png); */
+    background-position: 600px 0px;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+.main__container::before {
+    content: url(/img/main/vrBoy.png);
+    left: 600px;
+    top: 50px;
+    position: absolute;
+    z-index: 1;
+}
+
+.main__text-position {
+    position: relative;
+    vertical-align: top;
+    margin: 0;
+}
+
+.main__text {
+    position: relative;
+    padding-left: 100px;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 50px;
+    color: var(--mainText-color);
+    margin-bottom: 30px;
+}
+
+.main__text-1 {
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 100px;
+    line-height: 141px;
+    color: var(--mainTextOne-color);
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.size {
+    padding-top: 10px;
+    font-size: 75px;
+    margin-bottom: -10px;
+}
+
+.main__text-2 {
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 34px;
+    text-align: center;
+    color: var(--mainText-color);
+}
+
+.main__list {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: flex-start;
+    gap: 10px;
+    flex-flow: row wrap;
+
+    margin-bottom: 80px;
+}
+
+.main__button {
+    width: 374px;
+    height: 80px;    
+    background: var(--mainBackground-color);
+    border-radius: 10px;
+
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: var(--mainText-color);
+    position: relative;
+    margin-right: 165px;
+    transition-duration: 0.2s;
+}
+
+.main__button:hover, .main__button:focus {
+    background: #840AA3;
+    border-radius: 10px;
+}
+
+.main__button:active {
+    background: #640AA3;
+    border-radius: 10px;
+}
+
+.main__button-down {
+    border: 1px solid #FFFFFF;
+    border-radius: 90px;
+    box-sizing: border-box;
+    background: none;
+    height: 97px;
+    width: 97px;
+    position: relative;
+    z-index: 2;
+    bottom: -90px;
+    background-image: url(/img/main/downWhite.png);
+    background-repeat: no-repeat;
+    background-position: 32px 26px;
+    transition-duration: 0.4s;
+}
+
+.main__button-down:hover {
+    background: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    background-image: url(/img/main/downPurple.png);
+    background-repeat: no-repeat;
+    background-position: 32px 26px;
+}
+
+.main__button-down:active {
+    background: var(--mainTextOne-color);
+    border: 1px solid var(--mainTextOne-color);
+    background-image: url(/img/main/downPurple.png);
+    background-repeat: no-repeat;
+    background-position: 32px 26px;
+}
+
+.main__button-down:focus {
+    border: 1px solid #FFFFFF;
+    background-image: url(/img/main/downWhite.png);
+    background-repeat: no-repeat;
+    background-position: 32px 26px;
+}

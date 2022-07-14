@@ -1,0 +1,75 @@
+/* friends */
+.friends__header {
+    margin-bottom: 41px;
+}
+
+.friends__wrapper {
+    padding-left: 90px;
+}
+
+.friends__list {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    flex-flow: row wrap;
+    gap: 40px 20px;
+}
+
+.friends__list:first-child {
+    align-self: center;
+}
+
+
+.friends-size {
+    width: 380px;
+    height: 228px;
+    transition-duration: 0.4s;
+    transition-property: transform;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.friends-size:hover {
+    transform: scale(1.1);
+}
+
+.friends__vr {
+    background-image: url(/img/friends/vr.jpg);
+    margin-bottom: 50px;
+}
+
+.friends__audio {
+    background-image: url(/img/friends/audio.jpg);
+
+}
+
+.friends__karaoke {
+    background-image: url(/img/friends/karaoke.jpg);
+    margin-bottom: 50px;
+}
+
+.friends__nastolki {
+    background-image: url(/img/friends/nastolki.jpg);
+    margin-bottom: 50px;
+}
+
+.friends__film {
+    background-image: url(/img/friends/film.jpg);
+    
+}
+
+.friends__playstation {
+    background-image: url(/img/friends/playstation.jpg);
+    margin-bottom: 50px;
+}
+
+.friends__text {
+    font-family: Arial;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding-left: 40px;
+    padding-top: 166px;
+}

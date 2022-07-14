@@ -1,0 +1,97 @@
+/* rooms */
+
+.rooms__container {
+    padding-left: 90px;
+}
+
+.rooms__list {
+    display: flex;
+    justify-content: flex-start;
+    flex-flow: row wrap;
+    width: 1180px;
+    gap: 20px;
+}
+
+.rooms__vibes-item {
+    position: relative;
+    width: 580px;
+    height: 349px;
+    margin: 0;
+    background-image: url(/img/rooms/vibes.jpg);
+}
+
+.rooms__vibes-text {
+    padding-top: 150px; 
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 80px;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--mainText-color);;
+}
+
+.rooms__star-item {
+    position: relative;
+    width: 580px;
+    height: 349px;
+    background-image: url(/img/rooms/starWars.jpg);
+}
+
+.rooms__star-text {
+    padding-top: 150px; 
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 80px;
+    
+    text-align: center;
+    text-transform: uppercase;
+
+    color: var(--mainText-color);
+}
+
+.rooms__wild-item {
+    position: relative;
+    width: 580px;
+    height: 349px;
+    margin: 0;
+    background-image: url(/img/rooms/wildWest.jpg);
+}
+
+.rooms__wild-text {
+    padding-top: 150px; 
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 80px;
+    
+    text-align: center;
+    text-transform: uppercase;
+    
+    color: var(--mainText-color);
+}
+
+.rooms__neon-item {
+    position: relative;
+    width: 580px;
+    height: 349px;
+    background-image: url(/img/rooms/neonStyle.jpg);
+}
+
+.rooms__neon-text {
+    padding-top: 150px; 
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 80px;
+
+    text-align: center;
+    text-transform: uppercase;
+    
+    color: var(--mainText-color);
+}
