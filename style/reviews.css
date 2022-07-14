@@ -23,7 +23,7 @@ figure {
 .reviews__photo-name {
     text-align: center;
     font-family: Arial;
-    font-size: 20px;
+    font-size: var(--mainText-size);
     font-weight: 400;
     line-height: 28px;
     letter-spacing: 0em;
@@ -57,7 +57,7 @@ figure {
     width: 780px;
     padding-top: 60px;
     font-family: Arial;
-    font-size: 20px;
+    font-size: var(--mainText-size);
     font-weight: 400;
     line-height: 28px;
     letter-spacing: 0em;

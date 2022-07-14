@@ -23,7 +23,7 @@
     font-family: 'Arial';
     font-style: normal;
     font-weight: 400;
-    font-size: 20px;
+    font-size: var(--mainText-size);
     line-height: 28px;
     
     color: var(--mainText-color);   
@@ -34,7 +34,7 @@
     font-family: 'Arial';
     font-style: normal;
     font-weight: 400;
-    font-size: 20px;
+    font-size: var(--mainText-size);
     line-height: 28px;
 
     color: var(--mainText-color);
@@ -93,4 +93,5 @@ blockquote::before {
 
 .about__pic-text {
     float: right; 
+    font-size: var(--mainText-size);
 }

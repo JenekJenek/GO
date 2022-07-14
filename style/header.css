@@ -62,6 +62,11 @@
     letter-spacing: 0em;
     text-align: left;
     text-transform: uppercase;
+    color: var(--mainText-color);
+}
+
+.header__list-text:active {
+    transition: 1s;
 }
 
 .header__list-text:hover {

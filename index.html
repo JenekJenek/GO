@@ -17,19 +17,19 @@
                     <nav class="header__nav">
                         <ul class="header__list">
                             <li class="header__list-item">
-                                <a class="header__list-text">залы</a>
+                                <a class="header__list-text" href="#rooms">залы</a>
                             </li>
                             <li class="header__list-item">
-                                <a class="header__list-text">О нас</a>
+                                <a class="header__list-text" href="#about">О нас</a>
                             </li>
                             <li class="header__list-item">
-                                <a class="header__list-text">Бронь</a>
+                                <a class="header__list-text" href="#reserved">Бронь</a>
                             </li>
                             <li class="header__list-item">
-                                <a class="header__list-text">отзывы</a>
+                                <a class="header__list-text" href="#reviews">отзывы</a>
                             </li>
                             <li class="header__list-item">
-                                <a class="header__list-text">Контакты</a>
+                                <a class="header__list-text" href="#contacts">Контакты</a>
                             </li>
                         </ul>
                     </nav>
@@ -58,10 +58,8 @@
                             <p class="main__text-2">Новейшая <br> аппаратура</p>
                         </li>
                     </ul>
-                    <button class="main__button">Забронировать</button>
-                    <button class="main__button-down">
-
-                    </button>
+                    <a href="#reserved"><button class="main__button">Забронировать</button></a>
+                    <a href="#friends"><button class="main__button-down"></button></a>
                     <!-- <img class="main__logo-pic" src="img/main/vrBoy.png" alt="мужчина в виэр очках"> -->
                 </div>
             </div>
@@ -69,7 +67,7 @@
 
         <section class="friends">
             <div class="container">
-                <h2 class="friends__header">У нас есть все для классного <br>
+                <h2 class="friends__header" id="friends">У нас есть все для классного <br>
                     отдыха с друзьями!</h2>
                 <div class="friends__wrapper">
                     <ul class="friends__list">
@@ -100,7 +98,7 @@
         
         <section class="rooms">
             <div class="container">
-            <h2>Наши залы</h2>
+            <h2 id="rooms">Наши залы</h2>
                 <div class="rooms__container">
                     <ul class="rooms__list">
                         <li class="rooms__vibes-item">
@@ -125,16 +123,16 @@
 
         <section class="reserved">
             <div class="container">
-                <h2 class="reserved__header">Забронировать зал просто</h2>
+                <h2 class="reserved__header" id="reserved">Забронировать зал просто</h2>
                     <h3 class="reserved__header-form">Выбери зал</h3>
                         <div class="reserved__wrapper">
-                            <form action="#">
+                            <form action="https://jsonplaceholder.typicode.com/posts" method="post"> 
                                 <div class="reserved__box">
                                     <ul class="reserved__list-button">
-                                        <li class="reserved__item-button"><button class="reserved__button-style">80’s vibes</button></li>
-                                        <li class="reserved__item-button"><button class="reserved__button-style">Star wars</button></li>
-                                        <li class="reserved__item-button"><button class="reserved__button-style">wild west</button></li>
-                                        <li class="reserved__item-button"><button class="reserved__button-style">neon style</button></li>   
+                                        <li class="reserved__item-button"><label for="vibes"><button class="reserved__button-style" name="vibes" value="yes">80’s vibes</button></label></li>
+                                        <li class="reserved__item-button"><label for="star"><button class="reserved__button-style" name="star" value="yes">Star wars</button></label></li>
+                                        <li class="reserved__item-button"><label for="wild"><button class="reserved__button-style" name="wild" value="yes">wild west</button></label></li>
+                                        <li class="reserved__item-button"><label for="neon"><button class="reserved__button-style" name="neon" value="yes">neon style</button></label></li>   
                                     </ul>
                                 
                                     <h3 class="reserved__header-form">Собери набор развлечений</h3>       
@@ -216,7 +214,7 @@
                                         </div>
                                     </div>
                                     <div class="reserved__footer">
-                                        <input class="reserved__footer-button" type="button" value="Забронировать" name="button" id="button"><label for="button"></label>
+                                        <input class="reserved__footer-button" type="submit" value="Забронировать" name="button" id="button"><label for="button"></label>
                                     </div>
                                 </div>
                             </form>
@@ -226,7 +224,7 @@
     
         <section class="about">
             <div class="container">
-                <h2 class="about__header">О нас</h2>
+                <h2 class="about__header" id="about">О нас</h2>
                 <div class="about__container">
                     <div class="about__wrapper">
                         <div class="about__box about__box-size"></div>
@@ -254,7 +252,7 @@
 
         <section class="reviews">
             <div class="container">
-                <h2>Отзывы посетителей</h2>
+                <h2 id="reviews">Отзывы посетителей</h2>
                 <ul class="reviews__list">
                     <li class="reviews__item">
                         <div class="reviews__photo blo">
@@ -327,7 +325,7 @@
             
         <footer class="footer">
             <div class="container">
-                <h2 class="footer__contact-header">Контакты</h2>
+                <h2 class="footer__contact-header" id="contacts">Контакты</h2>
                 <div class="footer__wrapper">
                     <div class="footer__box">
                         <ul class="footer__contact-list">
