@@ -11,7 +11,7 @@
     font-weight: 700;
     font-size: 24px;
     line-height: 28px;
-    color: var(--mainText-color);;
+    color: var(--mainText-color);
 }
 
 .footer__contact-list {
@@ -84,16 +84,12 @@
     justify-content: space-between;
     flex-direction: row;
     row-gap: 40px;
-    width: 1180px;
-    padding-left: 90px;
     margin-bottom: 156px;
 }
 
 .footer__downer {
     display: flex;
     justify-content: space-between;
-    width: 1180px;
-    padding-left: 90px;
 }
 
 .footer__downer-text {
@@ -136,4 +132,19 @@
 
 .footer__button:focus svg {
     fill: #EADEED;
+}
+
+@media (max-width: 1024px) {
+    .footer__yandex {
+        width: 542px;
+        height: 274px;
+    }
+
+    .footer-text {
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 28px;
+    }
 }

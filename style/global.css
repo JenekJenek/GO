@@ -12,8 +12,8 @@ html {
 
 body {
     background: #1B1A1B;
-    min-width: 320px;
-    min-height: 100vh;
+    /* min-width: 320px;
+    min-height: 100vh; */
     font-family: Arial, sans-serif;
     font-size: 20px;
     font-weight: 400;
@@ -96,7 +96,7 @@ img {
 
 .container { 
     margin: 0 auto;
-    width: 1440px;
+    width: 1180px;
 }
 
 th {
@@ -104,3 +104,25 @@ th {
     padding: 0;
 }
 
+
+@media (max-width: 1024px) {
+    .container {
+        width: 904px;
+    }
+
+    section {
+        padding-top: 35px;
+        padding-bottom: 35px;
+    }
+
+    h2 {
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 40px;
+        margin-bottom: 36px;
+    }
+
+    :root {
+        --mainText-size: 18px;
+    }
+}

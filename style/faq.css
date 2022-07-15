@@ -8,14 +8,17 @@
     color: #1C1A1A;
     font-weight: 700;
     font-size: 24px;
-    padding: 30px 70px;
+
     vertical-align: middle;
-    width: 1040px;
+
     color: var(--mainText-color);
 
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 87px;
+    padding-left: 30px;
+    padding-right: 70px;
 }
 
 .element:hover {
@@ -109,9 +112,62 @@
 
 .faq-list {
     list-style-type: none;
-    padding-left: 90px;
 
     display: flex;
     flex-flow: column;
     gap: 20px;
+}
+
+@media (max-width: 1024px) {
+    .element {
+        position: relative;
+        background-color: #fff;
+        height: 30px;
+        width: auto;
+        color: hsla(0, 4%, 10%, 1);
+        font-weight: 700;
+        font-size: 24px;
+        padding: 30px 70px;
+        vertical-align: middle;
+    
+        color: hsla(0, 4%, 10%, 1);
+        padding: 0 20px 0 25px;
+        height: 70px;
+        
+    }
+
+    .element:last-child {
+        background-color: red;
+        color: red;
+    }
+
+    .element:hover {
+        background-color: #fff;
+    }
+
+    .element:nth-child(odd){
+        background-color: #fff;
+        color: hsla(0, 4%, 10%, 1);
+    }
+
+    .faq__button-white {
+        background-image: url(/img/faq/open-purple.png);
+        background-color: #fff;
+    }
+
+    .faq__button-white:hover {
+        background-color: #fff;
+    }
+
+    .faq__button-white:active {
+        background-color: #fff;
+    }
+
+    .faq__display {
+        display: none;
+    }
+
+    .faq-list {
+        gap: 16px;
+    }
 }

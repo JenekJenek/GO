@@ -5,19 +5,20 @@ figure {
 }
 
 .reviews__list {
-    padding-left: 90px;
     display: flex;
     flex-direction: column;
     gap: 50px;
 }
 
-.reviews__photo {
-    margin-right: 20px;
-}
-
 .blo {
     display: inline-block;
     vertical-align: top;
+}
+
+.reviews__item {
+    display: flex;
+    justify-content: center;
+    gap: 20px   ;
 }
 
 .reviews__photo-name {
@@ -32,6 +33,7 @@ figure {
 .reviews__photo-item {
     margin-bottom: 11px;
     position: relative;
+    
 }
 
 .reviews__gradient {
@@ -50,15 +52,59 @@ figure {
         top: -296px; 
         background: radial-gradient(50% 50% at 50% 50%, rgba(196, 196, 196, 0) 0%, rgba(108, 2, 135, 0.5) 100%);
         border-radius: 140px;
-
     }
 
 .reviews__text {
-    width: 780px;
     padding-top: 60px;
     font-family: Arial;
     font-size: var(--mainText-size);
     font-weight: 400;
     line-height: 28px;
     letter-spacing: 0em;
+}
+
+@media (max-width: 1024px) {
+    .reviews__photo-item {
+        width: 172px;
+        height: 172px;
+    }
+
+    .reviews__gradient::after {
+        width: 172px;
+        height: 172px;
+        top: -188px;
+    }
+
+    .reviews__item {
+    display: flex;
+    justify-content: center;
+    gap: 38px;
+    }
+
+    .reviews__photo {
+        grid-row: 1 \ span 2;
+        grid-column: 1;
+    }
+
+    .reviews__photo-name {
+        grid-row: 2;
+    }
+
+    .reviews__gradient {
+        margin-bottom: -178px;
+    }
+
+    .reviews__list {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .reviews__text-style {
+        width: 450px;
+    }
+
+    .reviews__text {
+        padding-top: 40px;
+    }
 }

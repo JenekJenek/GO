@@ -1,7 +1,4 @@
 /* about */
-.about__container {
-    padding-left: 90px;
-}
 .about__wrapper {
     display: flex;
     justify-content: flex-start;
@@ -17,7 +14,6 @@
     height: 596px;
     background-image: url(/img/about/photos.jpg);
 }
-
 
 .about__text {
     font-family: 'Arial';
@@ -54,7 +50,8 @@ blockquote {
     line-height: 50px;
 
     text-transform: uppercase;
-    color: var(--mainText-color);  
+    color: var(--mainText-color); 
+    width: 455px;
 }
 
 blockquote::before {
@@ -94,4 +91,66 @@ blockquote::before {
 .about__pic-text {
     float: right; 
     font-size: var(--mainText-size);
+    width: 260px;
+    
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+@media (max-width: 1024px) {
+    blockquote {
+        margin: 0;
+        margin-bottom: 13px;
+        display: inline-block;
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 36px;
+        text-transform: uppercase;
+        color: var(--mainText-color);  
+        width: 375px;
+    }
+    
+    blockquote::before {
+        content: "“";
+        margin-right: 16px;    
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 30px;
+        line-height: 36px;
+        text-transform: uppercase;
+        color: var(--mainBackground-color);;
+    }
+
+    .about__ficha {
+        font-size: 30px;
+        line-height: 36px;
+    }
+
+    .about__text {
+        margin-bottom: 20px;
+    }
+
+    .about__text-x {
+        margin-bottom: 37px;
+    }
+
+    .about__box-size {
+        width: 382px;
+        height: 380px;
+        background-size: cover;
+    }
+
+    .about__pic-text {
+        width: 225px;
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 26px;
+    }
 }

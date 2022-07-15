@@ -2,10 +2,6 @@
     background-color: var(--mainBackgroundOne-color);
 }
 
-.reserved__wrapper {
-    padding-left: 90px;
-}
-
 .reserved__header {
     padding-top: 80px;
 }
@@ -126,7 +122,6 @@
 .reserved__list-button {
     display: flex;
     justify-content: flex-start;
-    width: 1180px;
     gap: 60px;
     margin-bottom: 60px;
 }
@@ -179,7 +174,6 @@
 }
 
 .reserved__list-date {
-    width: 1180px;
     padding-left: 75px;
     display: flex;
     flex-direction: row;
@@ -269,7 +263,6 @@
 }
 
 .reserved__footer {
-    width: 1213px;
     text-align: end;
 }
 
@@ -288,6 +281,7 @@
     text-transform: uppercase;
     color: var(--mainBackground-color);;
     margin-bottom: 30px;
+    margin-right: 32px;
 }
 
 .reserved__footer-button:hover {
@@ -311,7 +305,6 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    width: 1180px;
 }
 
 .reserved__box-header {
@@ -320,4 +313,69 @@
 
 .reserved__box-table {
     border-spacing: 22px;
+}
+
+@media (max-width: 1024px) {
+    .reserved__header-form {
+        margin-bottom: 26px;
+    }
+
+    .reserved__list-button {
+        display: flex;
+        justify-content: space-between;
+        gap: 50px;
+        margin-bottom: 60px;
+    }
+
+    .reserved__button-style {
+        width: 180px;
+        height: 44px;
+        background: #FFFFFF;
+        border-radius: 6px;
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .reserved__list-input {
+        justify-content: space-between;
+    }
+
+    .reserved__box-header {
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    .reserved__list-date {
+        padding-left: 0;
+        justify-content: space-between;
+    }
+
+    .reserved__date-button {
+        width: 134px;
+        height: 52px;
+    }
+
+    .reserved__name {
+        width: 251px;
+        height: 52px;
+    }
+
+    .reserved__date-box:first-child {
+        width: 400px;
+    }
+
+    .reserved__name:nth-child(1) {
+        width: 251px;
+    }
+
+    .reserved__size {
+        width: 264px;
+        height: 52px;
+    }
+
+
+
 }

@@ -11,7 +11,8 @@
 <body>
 
     <header class="header">
-        <div class="container header__wrapper">
+        <div class="container">
+            <div class="header__wrapper">
                 <div class="header__logo"></div>
                 <div class="header__nav">
                     <nav class="header__nav">
@@ -38,7 +39,7 @@
                 <div class="header__btn">
                     <button class="header__button">Заказать звонок</button>
                 </div>
-
+            </div>
         </div>
     </header>
 
@@ -50,11 +51,15 @@
                     <p class="main__text">Новый формат игр и отдыха</p>
                     <ul class="main__list">
                         <li class="main__list-item">
-                            <p class="main__text-1">4</p>
+                            <p class="main__text-1 fourth">4</p>
+                        </li>
+                        <li class="main__list-item tematic">
                             <p class="main__text-2">Тематических <br> зала</p>
                         </li>
-                        <li class="main__list-item">
+                        <li class="main__list-item new">
                             <p class="main__text-1 size">new</p>
+                        </li>
+                        <li class="main__list-item newer">
                             <p class="main__text-2">Новейшая <br> аппаратура</p>
                         </li>
                     </ul>
@@ -101,20 +106,20 @@
             <h2 id="rooms">Наши залы</h2>
                 <div class="rooms__container">
                     <ul class="rooms__list">
-                        <li class="rooms__vibes-item">
-                            <p class="rooms__vibes-text">80's vibes</p>
+                        <li class="rooms__list-item">
+                            <p class="rooms__list-text">80's <br> vibes</p>
                         </li>
             
-                        <li class="rooms__star-item">
-                                <p class="rooms__star-text">Star wars</p>
+                        <li class="rooms__star-item rooms__list-item">
+                                <p class="rooms__list-text">Star <br> wars</p>
                         </li>
             
-                        <li class="rooms__wild-item">
-                                <p class="rooms__wild-text">Wild West</p>
+                        <li class="rooms__wild-item rooms__list-item">
+                                <p class="rooms__list-text">Wild <br> West</p>
                         </li>
             
-                        <li class="rooms__neon-item">
-                                <p class="rooms__neon-text">Neon style</p>
+                        <li class="rooms__neon-item rooms__list-item">
+                                <p class="rooms__list-text">Neon <br> style</p>
                         </li>
                     </ul>
                 </div>
@@ -208,9 +213,9 @@
                                         </div>
                                         <div class="reserved__date-box">
                                             <label for="telephone" class="reserved__name-text">Телефон</label>
-                                            <input class="reserved__name" type="tel" placeholder="" name="telephone" id="telephone">
+                                            <input class="reserved__name reserved__size" type="tel" placeholder="" name="telephone" id="telephone">
                                             <label for="email" class="reserved__name-text">E-mail</label>
-                                            <input class="reserved__name" type="email" placeholder="" name="email" id="email">
+                                            <input class="reserved__name reserved__size" type="email" placeholder="" name="email" id="email">
                                         </div>
                                     </div>
                                     <div class="reserved__footer">
@@ -234,14 +239,13 @@
                             <p class="about__text-x">Каждый день мы стараемся создавать для вас самую лучшую игровую атмосферу и радовать Вас топовыми игровыми 
                                 разработками со всего мира.</p>
                 
-                            <blockquote>GAME OVER — <br>
+                            <blockquote>GAME OVER — 
                                 это место незабываемых впечатлений <span class="about__ficha">”</span></blockquote>
                 
                             <figure class="about__pic-style">
                                 <img class="about__pic" src="img/about/creator.png" alt="Аркадий Абакшин,
                                 создатель игровой территории GAME OVER ">
-                                <figcaption class="about__pic-text"> Аркадий Абакшин, <br>
-                                    создатель игровой  <br> территории GAME OVER
+                                <figcaption class="about__pic-text"> Аркадий Абакшин, создатель игровой территории GAME OVER
                                 </figcaption>
                             </figure>
                         </div>
@@ -253,22 +257,22 @@
         <section class="reviews">
             <div class="container">
                 <h2 id="reviews">Отзывы посетителей</h2>
-                <ul class="reviews__list">
-                    <li class="reviews__item">
+                <div class="reviews__list">
+                    <div class="reviews__item">
                         <div class="reviews__photo blo">
                             <figure class="reviews__photo-style">
                                 <div class="reviews__gradient">
                                     <img class="reviews__photo-item" src="img/reviews/max.png" alt="Макс Самойлов">
                                 </div>
                             <figcaption class="reviews__photo-name">Макс Самойлов</figcaption> 
-                            </figure>
-                            
+                            </figure> 
                         </div>
+
                         <div class="reviews__text blo">
                             <p class="reviews__text-style">Отмечали здесь день рождения с компанией друзей, все было очень круто! VR очки это просто бомба, никогда еще я не был в таком полном игровом погружении. Сервис на высоте!</p>
                         </div>
-                    </li>
-                    <li class="reviews__item">
+                    </div>
+                    <div class="reviews__item">
                         <div class="reviews__photo blo">
                             <figure class="reviews__photo-style">
                                 <div class="reviews__gradient">
@@ -281,8 +285,8 @@
                         <div class="reviews__text blo">
                             <p class="reviews__text-style">Были в комнате Дикий Запад, пели в караоке под Шакиру, отличный получился корпоратив! У нас в городе больше нет подобных заведений</p>
                         </div>
-                    </li>
-                    <li class="reviews__item">
+                    </div>
+                    <div class="reviews__item">
                         <div class="reviews__photo blo">
                             <figure class="reviews__photo-style">
                             <div class="reviews__gradient">
@@ -295,8 +299,8 @@
                         <div class="reviews__text blo">
                             <p class="reviews__text-style">Немного подвисала игра в VR очках, а так все норм. Крутое оформление комнаты в стиле звездных войн, попал в атмосферу космоса</p>
                         </div>
-                    </li>
-                </ul>
+                    </div>
+                </div>
             </div>
         </section>
     
@@ -316,7 +320,7 @@
                     <li class="element icon-white">Как получить VIP карту?
                         <button class="faq__button-white"></button>
                     </li>
-                    <li class="element icon-purple">Какая комната самая популярная?
+                    <li class="element icon-purple faq__display">Какая комната самая популярная?
                         <button class="faq__button-purple"></button>
                     </li>
                 </ul>
@@ -330,8 +334,7 @@
                     <div class="footer__box">
                         <ul class="footer__contact-list">
                             <li class="footer__local-item">
-                                    <p class="footer__local footer-text">г. Москва <br>
-                                            ул. Аквамарина, 16</p>
+                                    <p class="footer__local footer-text">г. Москва <br> ул. Аквамарина, 16</p>
                             </li>
             
                             <li class="footer__tel-item">
@@ -376,7 +379,7 @@
                     </div>
 
                     <div class="footer__box">
-                        <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/org/sberbank/1078442909/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">СберБанк</a><a href="https://yandex.ru/maps/213/moscow/category/bank/184105398/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:14px;">Банк в Москве</a><iframe src="https://yandex.ru/map-widget/v1/-/CCUJVPeW1B" width="680" height="274" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>    
+                        <div style="position:relative;overflow:hidden;" class="footer__yandex"><a href="https://yandex.ru/maps/org/sberbank/1078442909/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">СберБанк</a><a href="https://yandex.ru/maps/213/moscow/category/bank/184105398/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:14px;">Банк в Москве</a><iframe src="https://yandex.ru/map-widget/v1/-/CCUJVPeW1B" width="680" height="274" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>    
                     </div>
                 </div>
 

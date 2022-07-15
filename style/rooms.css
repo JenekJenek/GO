@@ -1,97 +1,74 @@
 /* rooms */
 
-.rooms__container {
-    padding-left: 90px;
-}
-
 .rooms__list {
-    display: flex;
-    justify-content: flex-start;
-    flex-flow: row wrap;
-    width: 1180px;
+    display: grid;
+    grid-template-columns: 580px 580px;
+    grid-template-rows: 267px 267px;
     gap: 20px;
+    justify-content: space-between;
 }
 
-.rooms__vibes-item {
-    position: relative;
-    width: 580px;
-    height: 349px;
-    margin: 0;
+.rooms__list-text {
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 80px;
+    text-transform: uppercase;
+    color: var(--mainText-color);
+    text-align: center;
+}
+
+.rooms__list-item {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rooms__list-item:nth-child(1) {
     background-image: url(/img/rooms/vibes.jpg);
+    background-size: cover;
 }
 
-.rooms__vibes-text {
-    padding-top: 150px; 
-    font-family: 'Arial';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 70px;
-    line-height: 80px;
-    text-align: center;
-    text-transform: uppercase;
-    color: var(--mainText-color);;
-}
-
-.rooms__star-item {
-    position: relative;
-    width: 580px;
-    height: 349px;
+.rooms__list-item:nth-child(2) {
     background-image: url(/img/rooms/starWars.jpg);
+    background-size: cover;
 }
 
-.rooms__star-text {
-    padding-top: 150px; 
-    font-family: 'Arial';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 70px;
-    line-height: 80px;
-    
-    text-align: center;
-    text-transform: uppercase;
-
-    color: var(--mainText-color);
-}
-
-.rooms__wild-item {
-    position: relative;
-    width: 580px;
-    height: 349px;
-    margin: 0;
+.rooms__list-item:nth-child(3) {
     background-image: url(/img/rooms/wildWest.jpg);
+    background-size: cover;
 }
 
-.rooms__wild-text {
-    padding-top: 150px; 
-    font-family: 'Arial';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 70px;
-    line-height: 80px;
-    
-    text-align: center;
-    text-transform: uppercase;
-    
-    color: var(--mainText-color);
-}
-
-.rooms__neon-item {
-    position: relative;
-    width: 580px;
-    height: 349px;
+.rooms__list-item:nth-child(4) {
     background-image: url(/img/rooms/neonStyle.jpg);
+    background-size: cover;
 }
 
-.rooms__neon-text {
-    padding-top: 150px; 
-    font-family: 'Arial';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 70px;
-    line-height: 80px;
+@media (max-width:1024px) {
+    .rooms__vibes-item {
+        width: 443px;
+        height: 267px;
+    }
 
-    text-align: center;
-    text-transform: uppercase;
+    .rooms__list {
+        display: grid;
+        grid-template-columns: 443px 443px;
+        grid-template-rows: 267px 267px;
+        gap: 20px;
+        justify-content: space-between;
+    }
     
-    color: var(--mainText-color);
+    .rooms__list-text {
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 50px;
+        line-height: 60px;
+        text-transform: uppercase;
+        color: var(--mainText-color);
+        text-align: center;
+    }
 }

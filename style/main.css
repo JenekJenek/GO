@@ -1,7 +1,6 @@
 /* main */
 .main__container {
     position: relative;
-    padding-left: 90px;
     min-height: 812px;
     /* background-image: url(img/main/vrBoy.png); */
     background-position: 600px 0px;
@@ -10,11 +9,15 @@
 }
 
 .main__container::before {
-    content: url(/img/main/vrBoy.png);
-    left: 600px;
-    top: 50px;
+    content: "";
+    background-image: url(/img/main/vrBoy.png);
+    background-size: cover;
+    left: 505px;
+    top: 49px;
     position: absolute;
     z-index: 1;
+    width: 675px;
+    height: 762px;
 }
 
 .main__text-position {
@@ -46,12 +49,6 @@
     text-align: center;
 }
 
-.size {
-    padding-top: 10px;
-    font-size: 75px;
-    margin-bottom: -10px;
-}
-
 .main__text-2 {
     font-family: 'Arial';
     font-style: normal;
@@ -63,14 +60,38 @@
 }
 
 .main__list {
-    display: flex;
+    display: grid;
+    grid-template-columns: 200px 200px;
     justify-content: flex-start;
     align-items: center;
     align-content: flex-start;
-    gap: 10px;
-    flex-flow: row wrap;
-
+    row-gap: 10px;
+    column-gap: 40px;
     margin-bottom: 80px;
+}
+
+.size {
+    font-size: 75px;
+    padding-top: 10%;
+    font-variant: small-caps;
+}
+
+.fourth {
+    grid-row: 1;
+    grid-column: 1;
+}
+
+.tematic {
+    grid-row: 2;
+    grid-column: 1;
+}
+.new {
+    grid-row: 1;
+    grid-column: 2;
+}
+.newer {
+    grid-row: 2;
+    grid-column: 2;
 }
 
 .main__button {
@@ -138,4 +159,68 @@
     background-image: url(/img/main/downWhite.png);
     background-repeat: no-repeat;
     background-position: 32px 26px;
+}
+
+@media (max-width: 1024px) {
+    .main {
+        padding-top: 15px;
+    }
+    
+    .main__container {
+        min-height: 585px;
+    }
+
+    .main__container::before {
+        width: 453px;
+        height: 520px;
+        left: 450px;
+        top: 65px;
+    }
+
+    .main__text-position {
+        font-size: 120px;
+        line-height: 100%;
+        margin-bottom: 20px;
+    }
+
+    .main__text {
+        font-size: 22px;
+        line-height: 30px;
+    }
+
+    .main__text-1 {
+        font-size: 80px;
+        line-height: 113px;
+    }
+
+    .size {
+        font-size: 60px;
+        line-height: 85px;
+    }
+
+    .main__text-2 {
+        font-size: 26px;
+        line-height: 30px;
+    }
+
+    .main__button {
+        width: 296px;
+        height: 64px;
+        font-size: 22px;
+        line-height: 30px;
+        margin-right: 83px;
+        margin-left: 39px;
+    }
+
+    .main__button-down {
+        width: 67px;
+        height: 67px;
+        background-position: 50% 35%;
+        background-size: 35%;
+        bottom: -45px;
+    }
+
+    .main__list {
+        margin-bottom: 60px;
+    }
 }
