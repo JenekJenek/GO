@@ -220,6 +220,11 @@
         bottom: -45px;
     }
 
+    .main__button-down:hover {
+        background-position: 19px 26px;
+    }
+
+
     .main__list {
         margin-bottom: 60px;
     }
