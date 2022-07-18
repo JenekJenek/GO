@@ -13,6 +13,12 @@
     <header class="header">
         <div class="container">
             <div class="header__wrapper">
+                <button class="header__menu"><svg width="54" height="29" viewBox="0 0 54 29" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="54" height="5" rx="2" />
+                    <rect y="12" width="54" height="5" rx="2" />
+                    <rect y="24" width="31" height="5" rx="2" />
+                    </svg>
+                    </button>
                 <div class="header__logo"></div>
                 <div class="header__nav">
                     <nav class="header__nav">
@@ -63,8 +69,8 @@
                             <p class="main__text-2">Новейшая <br> аппаратура</p>
                         </li>
                     </ul>
-                    <a href="#reserved"><button class="main__button">Забронировать</button></a>
-                    <a href="#friends"><button class="main__button-down"></button></a>
+                    <form action="#reserved"><button class="main__button">Забронировать</button></form>
+                    <form action="#friends"><button class="main__button-down"></button></form>
                     <!-- <img class="main__logo-pic" src="img/main/vrBoy.png" alt="мужчина в виэр очках"> -->
                 </div>
             </div>
@@ -84,7 +90,7 @@
                                 с отличным звуком</p>
                         </li>
                         <li class="friends__karaoke friends-size">
-                            <p class="friends__text">Караоке (4 микрофона)</p>
+                            <p class="friends__text friends__text-size">Караоке (4 микрофона)</p>
                         </li>
                         <li class="friends__nastolki friends-size">
                             <p class="friends__text">Настольные игры</p>
@@ -134,13 +140,13 @@
                             <form action="https://jsonplaceholder.typicode.com/posts" method="post"> 
                                 <div class="reserved__box">
                                     <ul class="reserved__list-button">
-                                        <li class="reserved__item-button"><label for="vibes"><button class="reserved__button-style" name="vibes" value="yes">80’s vibes</button></label></li>
-                                        <li class="reserved__item-button"><label for="star"><button class="reserved__button-style" name="star" value="yes">Star wars</button></label></li>
-                                        <li class="reserved__item-button"><label for="wild"><button class="reserved__button-style" name="wild" value="yes">wild west</button></label></li>
-                                        <li class="reserved__item-button"><label for="neon"><button class="reserved__button-style" name="neon" value="yes">neon style</button></label></li>   
+                                        <li class="reserved__item-button"><label for="vibes"><button class="reserved__button-style" name="vibes" value="yes" id="vibes">80’s vibes</button></label></li>
+                                        <li class="reserved__item-button"><label for="star"><button class="reserved__button-style" name="star" value="yes" id="star">Star wars</button></label></li>
+                                        <li class="reserved__item-button"><label for="wild"><button class="reserved__button-style" name="wild" value="yes" id="wild">wild west</button></label></li>
+                                        <li class="reserved__item-button"><label for="neon"><button class="reserved__button-style" name="neon" value="yes" id="neon">neon style</button></label></li>   
                                     </ul>
                                 
-                                    <h3 class="reserved__header-form">Собери набор развлечений</h3>       
+                                    <h3 class="reserved__header-form reserved__header-margin">Собери набор развлечений</h3>       
                                     <div class="reserved__list-input">
                                             <div class="reserved__input-box">
                                                 <table class="reserved__box-table">
@@ -242,6 +248,20 @@
                             <p class="about__text-x">Каждый день мы стараемся создавать для вас самую лучшую игровую атмосферу и радовать Вас топовыми игровыми 
                                 разработками со всего мира.</p>
                 
+                                <div class="about__second-block">
+                                    <blockquote>GAME OVER — 
+                                        это место незабываемых впечатлений <span class="about__ficha">”</span></blockquote>
+                        
+                                    <figure class="about__pic-style">
+                                        <img class="about__pic" src="img/about/creator.png" alt="Аркадий Абакшин,
+                                        создатель игровой территории GAME OVER ">
+                                        <figcaption class="about__pic-text"> Аркадий Абакшин, создатель игровой территории GAME OVER
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                        </div>
+
+                        <div class="about__box three">
                             <blockquote>GAME OVER — 
                                 это место незабываемых впечатлений <span class="about__ficha">”</span></blockquote>
                 
@@ -311,7 +331,7 @@
             <div class="container">
             <h2>Частые вопросы</h2>
                 <ul class="faq-list">
-                    <li class="element icon-purple">Можно ли забронировать комнату онлайн?
+                    <li class="element icon-purple"><p class="faq__text">Можно ли забронировать комнату онлайн?</p>
                         <button class="faq__button-purple"></button>
                     </li>
                     <li class="element icon-white">Могут ли вернуть деньги за бронь?

@@ -99,6 +99,10 @@ blockquote::before {
     line-height: 28px;
 }
 
+.three {
+    display: none;
+}
+
 @media (max-width: 1024px) {
     blockquote {
         margin: 0;
@@ -152,5 +156,126 @@ blockquote::before {
         font-weight: 400;
         font-size: 18px;
         line-height: 26px;
+    }
+}
+
+@media (max-width: 768px) {
+    .three {
+        display: block;
+    }
+
+    .about__second-block {
+        display: none;
+    }
+
+    .about__wrapper {
+        flex-wrap: wrap;
+        gap: 28px;
+    }
+
+    .about__box {
+        width: 260px;
+    }
+
+    .about__box-size {
+        width: 382px;
+        height: 380px;
+        background-size: cover;
+    }
+
+    .about__box:last-child {
+        width: 100%;
+    }
+
+    blockquote {
+        width: 685px;
+        margin-bottom: 28px;
+    }
+
+    .about__pic-style {
+        display: flex;
+        justify-content: end;
+    }
+
+    .about__text {
+        padding-top: 50px;
+        line-height: 22px;
+    }
+
+    .about__text-x {
+        line-height: 22px;
+    }
+}
+
+@media (max-width: 320px) {
+    .about__header {
+        padding-top: 15px;
+    }
+
+    .about__box:nth-child(1) {
+        order: 1;
+    }
+
+    .about__box:nth-child(3) {
+        order: 2;
+    }
+
+    .about__box {
+        width: 100%;
+    }
+
+    .about__text {
+        padding-top: 0;
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .about__text-x {
+        line-height: 16px;    
+        margin-bottom: 0;  
+    }
+
+    .about__box-size {
+        width: 280px;
+        height: 280px;
+    }
+
+    blockquote {
+        font-size: 18px;
+        line-height: 6px;
+        width: 100%;
+        margin-bottom: 10px;
+        font-weight: 400;
+    }
+
+    blockquote::before {
+        font-size: 22px;
+        line-height: 50px;
+        margin-right: 4px;
+    }
+
+    .about__ficha {
+        font-size: 22px;
+        line-height: 50px;
+    }
+
+    .about__wrapper {
+        gap: 10px;
+    }
+
+    .about__pic {
+        width: 56px;
+        height: 56px;
+        padding-left: 0;
+    }
+
+    .about__pic-style {
+        justify-content: flex-start;
+    }
+
+    .about__pic-text {
+        font-size: 12px;
+        line-height: 16px;
+        width: 162px;
     }
 }

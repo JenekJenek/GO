@@ -38,6 +38,7 @@
     border: 0;
     background-color: #fff;
     transition-duration: 0.2s;
+    background-size: cover;
 }
 
 .faq__button-purple:hover {
@@ -64,6 +65,7 @@
     border: 0;
     background-color: var(--mainBackgroundOne-color);
     transition-duration: 0.2s;
+    background-size: cover;
 }
 
 .faq__button-white:hover {
@@ -112,7 +114,6 @@
 
 .faq-list {
     list-style-type: none;
-
     display: flex;
     flex-flow: column;
     gap: 20px;
@@ -127,13 +128,9 @@
         color: hsla(0, 4%, 10%, 1);
         font-weight: 700;
         font-size: 24px;
-        padding: 30px 70px;
         vertical-align: middle;
-    
-        color: hsla(0, 4%, 10%, 1);
         padding: 0 20px 0 25px;
         height: 70px;
-        
     }
 
     .element:last-child {
@@ -169,5 +166,36 @@
 
     .faq-list {
         gap: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .element {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 24px;
+    }
+}
+
+@media (max-width: 320px) {
+    .element {
+        font-size: 12px;
+        line-height: 16px;
+        padding: 0 15px 0 15px;
+        height: 46px;
+    }
+
+    .faq__button-purple , 
+    .faq__button-purple:hover , 
+    .faq__button-purple:active ,
+    .faq__button-white ,
+    .faq__button-white:hover ,
+    .faq__button-white:active  {
+        width: 30px;
+        height: 30px;
+    }
+
+    .faq__text {
+        width: 210px;
     }
 }

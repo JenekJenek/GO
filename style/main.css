@@ -99,7 +99,6 @@
     height: 80px;    
     background: var(--mainBackground-color);
     border-radius: 10px;
-
     font-family: 'Arial';
     font-style: normal;
     font-weight: 700;
@@ -131,11 +130,13 @@
     width: 97px;
     position: relative;
     z-index: 2;
-    bottom: -90px;
+    bottom: 21px;
+    left: 45%;
     background-image: url(/img/main/downWhite.png);
     background-repeat: no-repeat;
     background-position: 32px 26px;
     transition-duration: 0.4s;
+
 }
 
 .main__button-down:hover {
@@ -217,7 +218,7 @@
         height: 67px;
         background-position: 50% 35%;
         background-size: 35%;
-        bottom: -45px;
+        bottom: 21px;
     }
 
     .main__button-down:hover {
@@ -227,5 +228,131 @@
 
     .main__list {
         margin-bottom: 60px;
+    }
+}
+
+@media (max-width: 768px) {
+    .main__text-position {
+        font-weight: 900;
+        font-size: 86px;
+        line-height: 100%;
+        /* identical to box height, or 86px */
+        
+        letter-spacing: -0.1em;
+    }
+
+    .main__text {
+        font-size: 18px;
+        line-height: 24px;
+        margin-bottom: 50px;
+    }
+
+    .main__text-1 {
+        font-size: 50px;
+        line-height: 71px;
+    }
+
+    .size {
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 40px;
+        line-height: 56px;
+        font-variant: small-caps;
+    }
+
+    .main__text-2 {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 18px;
+    }
+
+    .main__list {
+        row-gap: 0;
+        column-gap: 35px;
+        grid-template-columns: 105px 105px;
+        margin-bottom: 100px;
+    }
+
+    .main__button-down {
+        display: none;
+    }
+
+    .main__button {
+        width: 214px;
+        height: 46px;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        margin-left: 0;
+    }
+
+    .main__container::before {
+        width: 409px;
+        height: 479px;
+        left: 276px;
+        top: 55px;
+    }
+
+    .main__container {
+        min-height: 535px;
+    }
+}
+
+@media (max-width: 320px) {
+    .main__text-position {
+        font-size: 35px;
+        line-height: 100%;
+        letter-spacing: -0.08em;
+        margin-bottom: 6px;
+    }
+
+    .main__text {
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 14px;
+        padding-left: 20px;
+        margin-bottom: 10px;
+    }
+
+    .main__text-1 {
+        font-size: 26px;
+        line-height: 37px;
+    }
+
+    .size {
+        font-size: 22px;
+        line-height: 31px;
+    }
+
+    .main__list {
+        row-gap: 0;
+        column-gap: 25px;
+        grid-template-columns: 65px 65px;
+        margin-bottom: 30px;
+    }
+
+    .main__text-2 {
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 11px;
+    }
+
+    .main__button {
+        width: 117px;
+        height: 27px;
+        font-size: 10px;
+        line-height: 12px;
+    }
+
+    .main__container::before {
+        width: 161px;
+        height: 179px;
+        left: 115px;
+        top: 25px;
+    }
+
+    .main__container {
+        min-height: 204px;
     }
 }

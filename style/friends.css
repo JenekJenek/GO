@@ -74,3 +74,62 @@
         padding-top: 85px;
     }
 }
+
+@media (max-width: 768px) {
+    .friends-size {
+        width: 334px;
+        height: 200px;
+    }
+
+    .friends__vr {
+        margin-bottom: 0;
+    }
+
+    .friends__karaoke {
+        margin-bottom: 0;
+    }
+
+    .friends__nastolki {
+        margin-bottom: 0;
+    }
+
+    .friends__film {
+        margin-bottom: 0;
+    }
+
+    .friends__playstation {
+        margin-bottom: 0;
+    }
+
+    .friends__list {
+        gap: 20px;
+    }
+
+    .friends__text {
+        padding-top: 120px;
+    }
+}
+
+@media (max-width: 320px) {
+    .friends__text {
+        font-weight: 700;
+        font-size: 10px;
+        line-height: 14px;
+        padding-top: 30px;
+        padding-left: 10px;
+        width: 115px;
+    }
+
+    .friends-size {
+        width: 135px;
+        height: 75px;
+    }
+
+    .friends__text-size {
+        width: 60px;
+    }
+
+    .friends__list {
+        gap: 10px;
+    }
+}

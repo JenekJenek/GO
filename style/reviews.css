@@ -108,3 +108,60 @@ figure {
         padding-top: 40px;
     }
 }
+
+@media (max-width: 768px) {
+    .reviews__photo-item {
+        width: 153px;
+        height: 153px;
+    }
+
+    .reviews__gradient {
+        margin-bottom: -153px;
+    }
+
+    .reviews__gradient::after {
+        width: 153px;
+        height: 153px;
+        top: -169px;
+    }
+
+    .reviews__text-style {
+        width: 393px;
+    }
+
+    .reviews__list {
+        gap: 30px;
+    }
+}
+
+@media (max-width: 320px) {
+    .reviews__item {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .reviews__text {
+        padding-top: 0;
+    }
+
+    .reviews__text-style {
+        width: 100%;
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .reviews__photo-item {
+        width: 86px;
+        height: 86px;
+    }
+
+    .reviews__gradient {
+        margin-bottom: -100px;
+    }
+
+    .reviews__gradient::after {
+        width: 86px;
+        height: 86px;
+        top: -102px;
+    }
+}
