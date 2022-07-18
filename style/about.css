@@ -12,7 +12,7 @@
 .about__box-size {
     width: 600px;
     height: 596px;
-    background-image: url(img/about/photos.jpg);
+    background-image: url(../img/about/photos.jpg);
 }
 
 .about__text {

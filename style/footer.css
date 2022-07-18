@@ -28,7 +28,7 @@
 
 .footer__local::before {
     content: "";
-    background-image: url(img/footer/location.svg);
+    background-image: url(../img/footer/location.svg);
     position: relative;
     width: 32px;
     height: 32px;
@@ -45,7 +45,7 @@
 }
 
 .footer__tel::before {
-    content: url(img/footer/phone.svg);
+    content: url(../img/footer/phone.svg);
     position: relative;
     width: 32px;
     height: 32px;
@@ -62,7 +62,7 @@
 }
 
 .footer__mail::before {
-    content: url(img/footer/mail.svg);
+    content: url(../img/footer/mail.svg);
     position: relative;
     width: 32px;
     height: 32px;
@@ -174,7 +174,7 @@
 
     .footer__local::before {
         content: "";
-        background-image: url(img/footer/location.svg);
+        background-image: url(../img/footer/location.svg);
         position: relative;
         width: 26px;
         height: 26px;
@@ -272,7 +272,7 @@
 
     .footer__tel::before {
         content: "";
-        background-image: url(img/footer/phone.svg);
+        background-image: url(../img/footer/phone.svg);
         position: relative;
         width: 20px;
         height: 20px;
@@ -284,7 +284,7 @@
 
     .footer__mail::before {
         content: "";
-        background-image: url(img/footer/mail.svg);
+        background-image: url(../img/footer/mail.svg);
         position: relative;
         width: 20px;
         height: 20px;

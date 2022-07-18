@@ -31,7 +31,7 @@
 }
 
 .faq__button-purple {
-    background-image: url(img/faq/open-purple.png);
+    background-image: url(../img/faq/open-purple.png);
     width: 46px;
     height: 46px;
     background-repeat: no-repeat;
@@ -42,7 +42,7 @@
 }
 
 .faq__button-purple:hover {
-    background-image: url(img/faq/purpleHover.png);
+    background-image: url(../img/faq/purpleHover.png);
     width: 46px;
     height: 46px;
     background-repeat: no-repeat;
@@ -50,7 +50,7 @@
 }
 
 .faq__button-purple:active {
-    background-image: url(img/faq/purpleActive.png);
+    background-image: url(../img/faq/purpleActive.png);
     width: 46px;
     height: 46px;
     background-repeat: no-repeat;
@@ -58,7 +58,7 @@
 }
 
 .faq__button-white {
-    background-image: url(img/faq/white.png);
+    background-image: url(../img/faq/white.png);
     width: 46px;
     height: 46px;
     background-repeat: no-repeat;
@@ -69,7 +69,7 @@
 }
 
 .faq__button-white:hover {
-    background-image: url(img/faq/whiteHover.png);
+    background-image: url(../img/faq/whiteHover.png);
     width: 46px;
     height: 46px;
     background-repeat: no-repeat;
@@ -78,7 +78,7 @@
 }
 
 .faq__button-white:active {
-    background-image: url(img/faq/whiteActive.png);
+    background-image: url(../img/faq/whiteActive.png);
     width: 46px;
     height: 46px;
     background-repeat: no-repeat;
@@ -148,7 +148,7 @@
     }
 
     .faq__button-white {
-        background-image: url(img/faq/open-purple.png);
+        background-image: url(../img/faq/open-purple.png);
         background-color: #fff;
     }
 

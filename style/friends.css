@@ -24,32 +24,32 @@
 }
 
 .friends__vr {
-    background-image: url(img/friends/vr.jpg);
+    background-image: url(../img/friends/vr.jpg);
     margin-bottom: 50px;
 }
 
 .friends__audio {
-    background-image: url(img/friends/audio.jpg);
+    background-image: url(../img/friends/audio.jpg);
 
 }
 
 .friends__karaoke {
-    background-image: url(img/friends/karaoke.jpg);
+    background-image: url(../img/friends/karaoke.jpg);
     margin-bottom: 50px;
 }
 
 .friends__nastolki {
-    background-image: url(img/friends/nastolki.jpg);
+    background-image: url(../img/friends/nastolki.jpg);
     margin-bottom: 50px;
 }
 
 .friends__film {
-    background-image: url(img/friends/film.jpg);
+    background-image: url(../img/friends/film.jpg);
     
 }
 
 .friends__playstation {
-    background-image: url(img/friends/playstation.jpg);
+    background-image: url(../img/friends/playstation.jpg);
     margin-bottom: 50px;
 }
 
