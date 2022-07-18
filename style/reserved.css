@@ -188,7 +188,7 @@
     border: 0;
     box-sizing: border-box;
 
-    background-image: url(/img/reserved/triangle.png);
+    background-image: url(img/reserved/triangle.png);
     background-position: 95px 20px;
     background-repeat: no-repeat;
     background-color: white;
@@ -213,7 +213,7 @@
     /* padding-left: 15px; */
     border: 0;
     
-    background-image: url(/img/reserved/triangle.png);
+    background-image: url(img/reserved/triangle.png);
     background-position: 280px 20px;
     background-repeat: no-repeat;
     background-color: white;

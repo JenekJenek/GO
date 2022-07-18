@@ -10,7 +10,7 @@
 
 .main__container::before {
     content: "";
-    background-image: url(/img/main/vrBoy.png);
+    background-image: url(img/main/vrBoy.png);
     background-size: cover;
     left: 505px;
     top: 49px;
@@ -132,7 +132,7 @@
     z-index: 2;
     bottom: 21px;
     left: 45%;
-    background-image: url(/img/main/downWhite.png);
+    background-image: url(img/main/downWhite.png);
     background-repeat: no-repeat;
     background-position: 32px 26px;
     transition-duration: 0.4s;
@@ -142,7 +142,7 @@
 .main__button-down:hover {
     background: #FFFFFF;
     border: 1px solid #FFFFFF;
-    background-image: url(/img/main/downPurple.png);
+    background-image: url(img/main/downPurple.png);
     background-repeat: no-repeat;
     background-position: 32px 26px;
 }
@@ -150,14 +150,14 @@
 .main__button-down:active {
     background: var(--mainTextOne-color);
     border: 1px solid var(--mainTextOne-color);
-    background-image: url(/img/main/downPurple.png);
+    background-image: url(img/main/downPurple.png);
     background-repeat: no-repeat;
     background-position: 32px 26px;
 }
 
 .main__button-down:focus {
     border: 1px solid #FFFFFF;
-    background-image: url(/img/main/downWhite.png);
+    background-image: url(img/main/downWhite.png);
     background-repeat: no-repeat;
     background-position: 32px 26px;
 }

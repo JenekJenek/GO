@@ -4,7 +4,7 @@
 }
 
 .header__logo {
-    background-image: url(/img/header/logo.svg);
+    background-image: url(img/header/logo.svg);
     height: 66px;
     width: 120px;
 }
