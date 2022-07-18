@@ -126,7 +126,11 @@
     margin-bottom: 60px;
 }
 
-.reserved__button-style {
+/* .reserved__button-style {
+    content: "lalala";
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
     width: 250px;
     height: 55px;
     background: #FFFFFF;
@@ -141,25 +145,80 @@
     text-transform: uppercase;
     color: #000000;
     transition-duration: 0.5s;
+    cursor: pointer;
+    position: relative;
+} */
+
+.reserved__item-button {
+    display: inline-block;
+    text-align: center;
+    border-radius: 3px white solid;
+    border-style: none;
+    box-sizing: border-box;
 }
 
-.reserved__button-style:hover {
+.reserved__item-button input[type=radio] {
+    display: none;
+}
+
+.reserved__item-button label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    height: 55px;
+    background: #FFFFFF;
+    border-radius: 3px;
+
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+    transition-duration: 0.5s;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.reserved__item-button label:hover {
+    background: #EADEED;;
+    border: 3px solid #640AA3;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+.reserved__item-button input[type=radio]:checked + label {
+    background: hsla(288, 97%, 27%, 1);
+    border: 3px solid #FFFFFF;
+    border-radius: 8px;
+    color: white;
+}
+
+.reserved__item-button input[type=radio]:disabled + label {
+    background: #FFFFFF;
+    border-radius: 3px;
+}
+
+/* .reserved__button-style:hover {
     background: #EADEED;
     border: 3px solid #640AA3;
     border-radius: 8px;
 }
 
 .reserved__button-style:active {
-    background: var(--mainBackground-color);;
+    background: hsla(288, 97%, 27%, 1);
     border: 3px solid #FFFFFF;
     border-radius: 8px;
 }
 
 .reserved__button-style:focus {
-    background: #FFFFFF;
-    border: 3px solid #640AA3;
+    background: hsla(288, 97%, 27%, 1);
+    border: 3px solid #FFFFFF;
     border-radius: 8px;
-}
+} */
 
 .reserved__date-button::-webkit-calendar-picker-indicator {
     color: transparent;
@@ -195,8 +254,6 @@
 }
 
 .reserved__date-button:first-child {
-    /* margin-right: 41px;
-    margin-bottom: 36px; */
     box-sizing: border-box;
 }
 
@@ -210,7 +267,6 @@
     font-size: 18px;
     line-height: 28px;
     color: #211E1E;
-    /* padding-left: 15px; */
     border: 0;
     
     background-image: url(../img/reserved/triangle.png);
@@ -226,14 +282,6 @@
 .reserved__date-number::placeholder {
     color:#211E1E ;
 }
-
-/* .reserved__date-box {
-
-}
-
-.reserved__date-box:first-child {
-
-} */
 
 .reserved__name {
     position: relative;
@@ -353,7 +401,7 @@
         margin-bottom: 60px;
     }
 
-    .reserved__button-style {
+    .reserved__item-button label {
         width: 180px;
         height: 44px;
         background: #FFFFFF;
@@ -441,7 +489,7 @@
         padding-top: 20px;
     }
 
-    .reserved__button-style {
+    .reserved__item-button label {
         width: 150px;
         height: 38px;
         font-size: 16px;
@@ -503,7 +551,7 @@
         margin-bottom: 0;
     }
 
-    .reserved__button-style {
+    .reserved__item-button label {
         width: 130px;
         height: 30px;
         font-weight: 700;

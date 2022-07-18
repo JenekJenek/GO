@@ -8,9 +8,7 @@
     color: #1C1A1A;
     font-weight: 700;
     font-size: 24px;
-
     vertical-align: middle;
-
     color: var(--mainText-color);
 
     display: flex;
@@ -19,15 +17,21 @@
     height: 87px;
     padding-left: 30px;
     padding-right: 70px;
+    cursor: pointer;
 }
 
-.element:hover {
-    background-color: var(--mainBackgroundOne-color);
+.element:hover button{
+    background-image: url(../img/faq/purpleHover.png);
+    cursor: pointer;
 }
 
 .element:nth-child(odd){
     background-color: #fff;
     color: var(--mainBackgroundOne-color);
+}
+
+.element:nth-child(even):hover button{
+    background-image: url(../img/faq/whiteHover.png);
 }
 
 .faq__button-purple {
@@ -47,6 +51,7 @@
     height: 46px;
     background-repeat: no-repeat;
     border: 0;
+    cursor: pointer;
 }
 
 .faq__button-purple:active {
@@ -133,30 +138,17 @@
         height: 70px;
     }
 
-    .element:last-child {
-        background-color: red;
-        color: red;
-    }
-
-    .element:hover {
-        background-color: #fff;
-    }
-
     .element:nth-child(odd){
         background-color: #fff;
         color: hsla(0, 4%, 10%, 1);
     }
 
+    .element:nth-child(even):hover button{
+        background-image: url(../img/faq/purpleHover.png);
+    }
+
     .faq__button-white {
         background-image: url(../img/faq/open-purple.png);
-        background-color: #fff;
-    }
-
-    .faq__button-white:hover {
-        background-color: #fff;
-    }
-
-    .faq__button-white:active {
         background-color: #fff;
     }
 
