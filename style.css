@@ -1,7 +1,7 @@
 @import url(/style/normalize.css);
 @import url(/style/global.css);
 @import url(.../style/header.css);
-@import url(/style/main.css);
+@import url(style/main.css);
 @import url(/style/friends.css);
 @import url(/style/rooms.css);
 @import url(/style/reserved.css);
