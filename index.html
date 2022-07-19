@@ -139,79 +139,54 @@
                         <div class="reserved__wrapper">
                             <form action="https://jsonplaceholder.typicode.com/posts" method="post"> 
                                 <div class="reserved__box">
-                                    <ul class="reserved__list-button">
-                                        <li class="reserved__item-button">
+                                    <fieldset class="reserved__list-button">
+                                        <div class="reserved__item-button">
                                                 <input type="radio"  class="reserved__button-style" name="room" value="80’s vibes" id="vibes">
                                                 <label for="vibes">80’s vibes</label>
-                                        </li>
-                                        <li class="reserved__item-button">
+                                        </div>
+                                        <div class="reserved__item-button">
                                             <input type="radio" class="reserved__button-style" name="room" value="Star wars" id="star">
                                             <label for="star">Star wars</label>
-                                            </li>
-                                        <li class="reserved__item-button">
+                                        </div>
+                                        <div class="reserved__item-button">
                                             <input type="radio" class="reserved__button-style" name="room" value="wild west" id="wild">
                                             <label for="wild">wild west</label>
-                                        </li>
-                                        <li class="reserved__item-button">
+                                        </div>
+                                        <div class="reserved__item-button">
                                                 <input type="radio" class="reserved__button-style" name="room" value="neon style" id="neon">
                                                 <label for="neon">neon style</label>
-                                            </li>   
-                                    </ul>
+                                        </div>   
+                                    </fieldset>
                                 
                                     <h3 class="reserved__header-form reserved__header-margin">Собери набор развлечений</h3>       
                                     <div class="reserved__list-input">
                                             <div class="reserved__input-box">
-                                                <table class="reserved__box-table">
-                                                    <tr>
-                                                        <th><p class="reserved__box-header">Приставка</p></th>
-                                                    </tr>
-                                                    <tr>
-                                                        <td><input class="reserved__item-radio" type="radio" name="gamebox" id="playstation" value="playstation"><label for="playstation">PlayStation 5</label></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td><input class="reserved__item-radio" type="radio" name="gamebox" id="sega" value="sega"><label for="sega">Sega Mega Drive</label></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td><input class="reserved__item-radio" type="radio" name="gamebox" id="xbox" value="xbox"><label for="xbox">X-box One S</label></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td><input class="reserved__item-radio" type="radio" name="gamebox" id="dendy" value="dendy"><label for="dendy">Dendy</label></td>
-                                                    </tr>
-                                                </table>
+                                                <fieldset class="reserved__box-table">                                               
+                                                        <p class="reserved__box-header">Приставка</p>                                                      
+                                                        <input class="reserved__item-radio" type="radio" name="gamebox" id="playstation" value="playstation"><label for="playstation">PlayStation 5</label>                                                                                                       
+                                                        <input class="reserved__item-radio" type="radio" name="gamebox" id="sega" value="sega"><label for="sega">Sega Mega Drive</label>                                                                                                       
+                                                        <input class="reserved__item-radio" type="radio" name="gamebox" id="xbox" value="xbox"><label for="xbox">X-box One S</label>                                                                                                      
+                                                        <input class="reserved__item-radio" type="radio" name="gamebox" id="dendy" value="dendy"><label for="dendy">Dendy</label>
+                                                    
+                                                </fieldset>
                                             </div>
 
                                             <div class="reserved__input-box">
-                                                <table class="reserved__box-table">
-                                                    <tr>
-                                                        <th><p class="reserved__box-header">Настольные игры</p></th>
-                                                    </tr>
-                                                    <tr>
-                                                        <td><input class="reserved__item-check" type="checkbox" name="tablegame" id="jenga" value="jenga"><label for="jenga">Jenga</label></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td><input class="reserved__item-check" type="checkbox" name="tablegame" id="monopoly" value="monopoly"><label for="monopoly">Monopoly</label></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td><input class="reserved__item-check" type="checkbox" name="tablegame" id="manchkin" value="manchkin"><label for="manchkin">Манчкин</label></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td><input class="reserved__item-check" type="checkbox" name="tablegame" id="alias" value="alias"><label for="alias">Alias</label></td>
-                                                    </tr>
-                                                </table>
+                                                <fieldset class="reserved__box-table">
+                                                        <p class="reserved__box-header">Настольные игры</p>                                                                                                      
+                                                        <input class="reserved__item-check" type="checkbox" name="tablegame" id="jenga" value="jenga"><label for="jenga">Jenga</label>                                                                                                      
+                                                        <input class="reserved__item-check" type="checkbox" name="tablegame" id="monopoly" value="monopoly"><label for="monopoly">Monopoly</label>                                                                                                        
+                                                        <input class="reserved__item-check" type="checkbox" name="tablegame" id="manchkin" value="manchkin"><label for="manchkin">Манчкин</label>                                                                                                     
+                                                        <input class="reserved__item-check" type="checkbox" name="tablegame" id="alias" value="alias"><label for="alias">Alias</label>         
+                                                </fieldset>
                                             </div>
 
                                             <div class="reserved__input-box">
-                                                <table class="reserved__box-table">
-                                                    <tr>
-                                                        <th><p class="reserved__box-header">Дополнительно</p></th>
-                                                    </tr>
-                                                    <tr>
-                                                        <td><input class="reserved__item-check" type="checkbox" name="addition" id="karaoke" value="karaoke"><label for="karaoke">Караоке</label></td>
-                                                    </tr>
-                                                    <tr>                 
-                                                        <td><input class="reserved__item-check" type="checkbox" name="addition" id="vr" value="vr"><label for="vr">VR</label></td>
-                                                    </tr>
-                                                </table>
+                                                <fieldset class="reserved__box-table">                                                   
+                                                        <p class="reserved__box-header">Дополнительно</p>                                                                                                     
+                                                        <input class="reserved__item-check" type="checkbox" name="addition" id="karaoke" value="karaoke"><label for="karaoke">Караоке</label>                                                                                                                    
+                                                        <input class="reserved__item-check" type="checkbox" name="addition" id="vr" value="vr"><label for="vr">VR</label>                                                   
+                                                </fieldset>
                                             </div>
                                     </div>
 
@@ -292,8 +267,8 @@
         <section class="reviews">
             <div class="container">
                 <h2 id="reviews">Отзывы посетителей</h2>
-                <div class="reviews__list">
-                    <div class="reviews__item">
+                <ul class="reviews__list">
+                    <li class="reviews__item">
                         <div class="reviews__photo blo">
                             <figure class="reviews__photo-style">
                                 <div class="reviews__gradient">
@@ -306,8 +281,8 @@
                         <div class="reviews__text blo">
                             <p class="reviews__text-style">Отмечали здесь день рождения с компанией друзей, все было очень круто! VR очки это просто бомба, никогда еще я не был в таком полном игровом погружении. Сервис на высоте!</p>
                         </div>
-                    </div>
-                    <div class="reviews__item">
+                    </li>
+                    <li class="reviews__item">
                         <div class="reviews__photo blo">
                             <figure class="reviews__photo-style">
                                 <div class="reviews__gradient">
@@ -320,8 +295,8 @@
                         <div class="reviews__text blo">
                             <p class="reviews__text-style">Были в комнате Дикий Запад, пели в караоке под Шакиру, отличный получился корпоратив! У нас в городе больше нет подобных заведений</p>
                         </div>
-                    </div>
-                    <div class="reviews__item">
+                    </li>
+                    <li class="reviews__item">
                         <div class="reviews__photo blo">
                             <figure class="reviews__photo-style">
                             <div class="reviews__gradient">
@@ -334,8 +309,8 @@
                         <div class="reviews__text blo">
                             <p class="reviews__text-style">Немного подвисала игра в VR очках, а так все норм. Крутое оформление комнаты в стиле звездных войн, попал в атмосферу космоса</p>
                         </div>
-                    </div>
-                </div>
+                    </li>
+                </ul>
             </div>
         </section>
     

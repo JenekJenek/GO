@@ -358,7 +358,10 @@
 }
 
 .reserved__box-table {
-    border-spacing: 22px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    row-gap: 1rem;
 }
 
 .reserved__box-flex {
@@ -504,6 +507,7 @@
         flex-wrap: wrap;
         justify-content: flex-start;
         column-gap: 120px;
+        row-gap: 1.5rem;
     }
 
     .reserved__list-date {
@@ -548,7 +552,7 @@
     }
 
     .reserved__header-margin {
-        margin-bottom: 0;
+        margin-bottom: 1rem;
     }
 
     .reserved__item-button label {
